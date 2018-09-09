@@ -119,23 +119,22 @@ const Header = props => {
   );
 };
 
+Header.defaultProps = {
+  pageAnchors: "",
+  fullPage: {}
+};
 Header.propTypes = {
   classes: PropTypes.shape({
-    root: PropTypes.object,
-    navBar: PropTypes.object,
-    button: PropTypes.object,
-    lastChildBtn: PropTypes.object,
-    nav: PropTypes.object,
-    downloadBtn: PropTypes.object,
-    icon: PropTypes.object
+    root: PropTypes.string,
+    navBar: PropTypes.string,
+    button: PropTypes.string,
+    lastChildBtn: PropTypes.string,
+    nav: PropTypes.string,
+    downloadBtn: PropTypes.string,
+    icon: PropTypes.string
   }).isRequired,
-  pageAnchors: PropTypes.shape({
-    ["firstPage"]: PropTypes.string,
-    ["seconPage"]: PropTypes.string,
-    ["thirdPage"]: PropTypes.string,
-    ["fourthPage"]: PropTypes.string
-  }).isRequired,
-  fullPage: PropTypes.func.isRequired
+  fullPage: PropTypes.object, // [eslint] object is forbidden
+  pageAnchors: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default withStyles(styles)(Header);

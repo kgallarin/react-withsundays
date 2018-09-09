@@ -1,15 +1,15 @@
 import React, { Fragment } from "react";
 import ReactFullPage from "@fullpage/react-fullpage";
-import "fullpage.js/vendors/scrolloverflow"; // [eslint] fullpage.js' should be listed in the project's dependencies. Run 'npm i -S fullpage.js' to a
+import "fullpage.js/vendors/scrolloverflow";
 
 import Header from "./Header";
 import FirstPage from "./FirstPage";
+import ThirdPage from "./ThirdPage";
 
 import SecondPage from "./SecondPage";
 
 const fullPageOptions = {
   anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage"],
-  callbacks: ["onLeave"],
   scrollOverflow: true,
   navigation: true,
   licenseKey: "null"
@@ -28,9 +28,7 @@ const FullPageWrapper = props => {
             <div id="fullpage-wrapper">
               <FirstPage />
               <SecondPage />
-              <div className="section">
-                <h3>Section 3</h3>
-              </div>
+              <ThirdPage />
               <div className="section">
                 <h3>Section 4</h3>
               </div>

@@ -16,7 +16,7 @@ const styles = theme => ({
     textAlign: "center"
   },
   logo: {
-    margin: "0 20px 0 50px",
+    margin: "0 20px 0 70px",
     maxWidth: "540px",
     [theme.breakpoints.down("sm")]: {
       width: "100%",

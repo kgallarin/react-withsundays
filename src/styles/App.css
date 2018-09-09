@@ -80,6 +80,11 @@
   margin: -2px 0 0 -2px;
 }
 
+.fp-responsive #fullPage .fp-slide,
+.fp-responsive #fullPage .fp-tableCell {
+  height: auto !important;
+}
+
 .first-section {
   background: url("../img/slidebg/first_slide.jpg");
   background-size: 100% 100%;
@@ -87,6 +92,11 @@
 
 .second-section {
   background: url("../img/slidebg/second_slide.jpg");
+  background-size: 100% 100%;
+}
+
+.third-section {
+  background: url("../img/slidebg/third_slide.jpg");
   background-size: 100% 100%;
 }
 
