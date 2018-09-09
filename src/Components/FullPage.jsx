@@ -7,6 +7,7 @@ import FirstPage from "./FirstPage";
 import ThirdPage from "./ThirdPage";
 
 import SecondPage from "./SecondPage";
+import FourthPage from "./FourthPage";
 
 const fullPageOptions = {
   anchors: ["video", "challenge", "solutions", "slideshow"],
@@ -29,9 +30,7 @@ const FullPageWrapper = props => {
               <FirstPage />
               <SecondPage />
               <ThirdPage />
-              <div className="section">
-                <h3>Section 4</h3>
-              </div>
+              <FourthPage />
             </div>
           </Fragment>
         );
