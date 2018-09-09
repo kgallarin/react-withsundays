@@ -121,8 +121,21 @@ const Header = props => {
 
 Header.propTypes = {
   classes: PropTypes.shape({
-    styles: PropTypes.object
-  }).isRequired
+    root: PropTypes.object,
+    navBar: PropTypes.object,
+    button: PropTypes.object,
+    lastChildBtn: PropTypes.object,
+    nav: PropTypes.object,
+    downloadBtn: PropTypes.object,
+    icon: PropTypes.object
+  }).isRequired,
+  pageAnchors: PropTypes.shape({
+    ["firstPage"]: PropTypes.string,
+    ["seconPage"]: PropTypes.string,
+    ["thirdPage"]: PropTypes.string,
+    ["fourthPage"]: PropTypes.string
+  }).isRequired,
+  fullPage: PropTypes.func.isRequired
 };
 
 export default withStyles(styles)(Header);

@@ -6,55 +6,84 @@ import { withStyles } from "@material-ui/core/styles";
 import secondSlideLogo from "../img/second_slide_logo.png";
 
 const styles = theme => ({
-  root: {
-    flexGrow: 1
-  },
-  playContainer: {
-    position: "absolute",
-    margin: "0 auto",
-    width: "100%",
-    textAlign: "center"
-  },
+  root: {},
   logo: {
-    margin: "0 20px 0 50px",
-    maxWidth: "540px",
-    [theme.breakpoints.down("sm")]: {
-      width: "100%",
-      margin: "0",
-      padding: "0 15px"
-    }
+    maxHeight: "115px"
   },
-  playImg: {
-    width: "100px",
-    height: "100px",
-    marginTop: "75px"
+  container: {
+    maxWidth: "1100px",
+    margin: "0 auto"
+  },
+  title: {
+    margin: "25px 0",
+    color: theme.palette.primary.main
   }
 });
 
-const SecondPage = () => {
+const SecondPage = props => {
+  const { classes } = props;
   return (
     <div id="section2" className="section second-section">
       <Grid
+        className={classes.container}
         container
         justify="space-evenly"
         alignItems="stretch"
         direction="row"
       >
-        <Grid item>
-          <img src={secondSlideLogo} alt="with-sundays" />
+        <Grid container md={6} alignItems="center" justify="center">
+          <img
+            src={secondSlideLogo}
+            alt="with-sundays"
+            className={classes.logo}
+          />
         </Grid>
-        <Grid item>
+        <Grid alignItems="flex-start" justify="center" container md={6}>
           <Grid container direction="column">
             <Grid item>
-              <Typography variant="display3">Background & Audience</Typography>
+              <Typography variant="display2" className={classes.title}>
+                Background & Audience
+              </Typography>
+              <Typography variant="subheading">
+                Tourism & Events Queensland wanted to increase consideration of
+                The Whitsundays amongst ‘social fun seekers’; digitally savvy
+                consumers that socialise substantially online.{" "}
+              </Typography>
             </Grid>
-            <Grid item>b</Grid>
-            <Grid item>c</Grid>
+            <Grid item>
+              <Typography variant="display2" className={classes.title}>
+                Problem
+              </Typography>
+              <Typography variant="subheading">
+                Tourism & Events Queensland wanted to increase consideration of
+                The Whitsundays amongst ‘social fun seekers’; digitally savvy
+                consumers that socialise substantially online.{" "}
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="display2" className={classes.title}>
+                Objective
+              </Typography>
+              <Typography variant="subheading">
+                Tourism & Events Queensland wanted to increase consideration of
+                The Whitsundays amongst ‘social fun seekers’; digitally savvy
+                consumers that socialise substantially online.{" "}
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
     </div>
   );
+};
+
+SecondPage.propTypes = {
+  classes: PropTypes.shape({
+    root: PropTypes.object,
+    logo: PropTypes.object,
+    container: PropTypes.object,
+    title: PropTypes.object
+  }).isRequired
 };
 
 export default withStyles(styles)(SecondPage);

@@ -21,7 +21,7 @@ const FullPageWrapper = props => {
     <ReactFullPage
       {...props}
       render={({ state, fullpageApi }) => {
-        //console.log("render prop change", state);  eslint-disable-line no-console
+        console.log("render prop change", state); //eslint-disable-line no-console
         return (
           <Fragment>
             <Header pageAnchors={anchors} fullPage={fullpageApi} />
