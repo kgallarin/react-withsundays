@@ -7,7 +7,7 @@ export default {
       contrastText: "#c3bb89"
     },
     secondary: {
-      main: "#fff",
+      main: "rgba(fff,fff,fff,0.0)",
       dark: "#fff",
       contrastText: "#fff"
     },
@@ -17,7 +17,7 @@ export default {
     },
     divider: "#D7D6D5",
     background: {
-      paper: "#fff",
+      paper: "transparent",
       header: "#333333",
       default: "#fff"
     }
