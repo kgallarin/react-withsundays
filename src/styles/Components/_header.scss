@@ -1,0 +1,19 @@
+.navElem {
+    .btnLogo{
+        padding: 0;
+        &:hover{
+            background: transparent;
+        }
+        img{
+            height: 31px;
+            width: 34px;        
+        }
+    }
+    div {
+        border-right: 1px solid #484848;
+        &:last-child,
+        &:nth-last-child(2){
+            border:0;
+        }
+    }
+}

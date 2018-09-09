@@ -1,0 +1,96 @@
+.navElem .btnLogo {
+  padding: 0;
+}
+.navElem .btnLogo:hover {
+  background: transparent;
+}
+.navElem .btnLogo img {
+  height: 31px;
+  width: 34px;
+}
+
+.navElem div {
+  border-right: 1px solid #484848;
+}
+.navElem div:last-child,
+.navElem div:nth-last-child(2) {
+  border: 0;
+}
+
+.fp-viewing-firstPage #fp-nav {
+  display: none !important;
+}
+
+#fp-nav ul li {
+  margin: 20px 0;
+}
+#fp-nav ul li a span {
+  background: #fff;
+  height: 5px;
+  width: 5px;
+}
+#fp-nav ul li a.active span {
+  height: 5px;
+  width: 5px;
+  margin: -2px 0 0 -2px;
+}
+#fp-nav ul li a.active span:after {
+  content: " ";
+  background: #ffffff30;
+  height: 13px;
+  width: 13px;
+  display: block;
+  top: -4px;
+  left: -4px;
+  position: absolute;
+  border-radius: 50%;
+}
+#fp-nav ul li:hover a.active span {
+  height: 5px;
+  width: 5px;
+  margin: -2px 0 0 -2px;
+}
+
+.fp-slidesNav ul li a span {
+  background: #fff;
+  height: 5px;
+  width: 5px;
+}
+
+.fp-slidesNav ul li a.active span {
+  height: 5px;
+  width: 5px;
+  margin: -2px 0 0 -2px;
+}
+.fp-slidesNav ul li a.active span:after {
+  content: " ";
+  background: #ffffff30;
+  height: 13px;
+  width: 13px;
+  display: block;
+  top: -4px;
+  left: -4px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.fp-slidesNav ul li:hover a.active span {
+  height: 5px;
+  width: 5px;
+  margin: -2px 0 0 -2px;
+}
+
+.first-section {
+  background: url("../img/slidebg/first_slide.jpg");
+  background-size: 100% 100%;
+}
+
+.second-section {
+  background: url("../img/slidebg/second_slide.jpg");
+  background-size: 100% 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
