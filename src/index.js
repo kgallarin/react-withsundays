@@ -4,6 +4,7 @@ import "./index.css";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import App from "./App";
+import "typeface-roboto";
 import registerServiceWorker from "./registerServiceWorker";
 import uiThemeConfig from "./styles/MuiThemeConfig";
 

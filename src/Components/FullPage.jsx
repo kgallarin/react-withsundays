@@ -9,7 +9,7 @@ import ThirdPage from "./ThirdPage";
 import SecondPage from "./SecondPage";
 
 const fullPageOptions = {
-  anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage"],
+  anchors: ["video", "challenge", "solutions", "slideshow"],
   scrollOverflow: true,
   navigation: true,
   licenseKey: "null"

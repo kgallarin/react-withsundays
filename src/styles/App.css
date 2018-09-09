@@ -100,6 +100,11 @@
   background-size: 100% 100%;
 }
 
+.fourth-section {
+  background: url("../img/slidebg/fourth_slide.jpg");
+  background-size: 100% 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;

@@ -31,7 +31,7 @@ const SecondPage = props => {
         alignItems="stretch"
         direction="row"
       >
-        <Grid item container md={6}>
+        <Grid item container md={5}>
           <Grid container alignItems="center" justify="flex-start">
             <img
               src={secondSlideLogo}
@@ -40,7 +40,7 @@ const SecondPage = props => {
             />
           </Grid>
         </Grid>
-        <Grid item container md={6}>
+        <Grid item container md={5}>
           <Grid container alignItems="flex-start" justify="flex-end">
             <Grid container direction="column">
               <Grid item>

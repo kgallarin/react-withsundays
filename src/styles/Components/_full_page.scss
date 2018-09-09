@@ -92,11 +92,6 @@
         }
     }
 }
-//  ,
-// .fp-responsive #fullPage ,
-// .fp-responsive #fullPage  {
-//     
-// }
 .fp-responsive{
     #fullPage{
         .fp-slide,
@@ -108,7 +103,7 @@
 // fullpage backgrounds
 .first-section {
     background: url('../img/slidebg/first_slide.jpg');
-    background-size: 100% 100%;    
+    background-size: 100% 100%;
 }
 
 .second-section{
@@ -118,5 +113,10 @@
 
 .third-section {
     background: url('../img/slidebg/third_slide.jpg');
+    background-size: 100% 100%;
+}
+
+.fourth-section {
+    background: url('../img/slidebg/fourth_slide.jpg');
     background-size: 100% 100%;
 }

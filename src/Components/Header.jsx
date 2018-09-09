@@ -36,14 +36,21 @@ const styles = theme => ({
     margin: `0 ${theme.spacing.unit}px 0 3px`,
     height: "10px",
     width: "12px"
+  },
+  positionFixed: {
+    boxShadow: theme.shadows[6]
   }
 });
-
 const Header = props => {
   const { classes, pageAnchors, fullPage } = props;
   return (
     <div className={classes.root}>
-      <AppBar className={classes.navBar} position="fixed" color="default">
+      <AppBar
+        className={classes.navBar}
+        classes={{}}
+        position="fixed"
+        color="default"
+      >
         <Toolbar>
           <Hidden>
             <Grid
@@ -64,7 +71,7 @@ const Header = props => {
                   </Typography>
                 </Button>
               </Grid>
-              <Grid item data-anchor={pageAnchors[1]}>
+              <Grid item>
                 <Button
                   className={classes.button}
                   onClick={() => {
