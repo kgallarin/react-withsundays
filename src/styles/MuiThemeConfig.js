@@ -17,7 +17,7 @@ export default {
     },
     divider: "#D7D6D5",
     background: {
-      paper: "#333333",
+      paper: "transparent",
       header: "#333333",
       default: "#333333"
     }

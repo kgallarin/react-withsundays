@@ -50,6 +50,7 @@ class AnchorMenu extends React.Component {
               pages.moveTo(anchors[0], 0);
             }}
             className={classes.menu}
+            style={{ background: "#282828", padding: "10px" }}
           >
             Home
           </MenuItem>
@@ -59,6 +60,7 @@ class AnchorMenu extends React.Component {
               pages.moveTo(anchors[1], 0);
             }}
             className={classes.menu}
+            style={{ background: "#282828", padding: "10px" }}
           >
             Challenge
           </MenuItem>
@@ -68,6 +70,7 @@ class AnchorMenu extends React.Component {
               pages.moveTo(anchors[2], 0);
             }}
             className={classes.menu}
+            style={{ background: "#282828", padding: "10px" }}
           >
             Solutions
           </MenuItem>
@@ -77,6 +80,7 @@ class AnchorMenu extends React.Component {
               pages.moveTo(anchors[3], 0);
             }}
             className={classes.menu}
+            style={{ background: "#282828", padding: "10px" }}
           >
             Slideshow
           </MenuItem>
