@@ -1,41 +1,48 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Slider from "react-slick";
-import "../styles/vendors/slick.min.css";
-import "../styles/vendors/slick-theme.min.css";
 
-const Carousel = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
+const Carousel = props => {
+  let settings = {
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
+    centerMode: true,
+    arrows: false,
+    centerPadding: "15px",
+    autoPlay: true,
+    dots: true
   };
+  const { data } = props;
   return (
-    <div>
-      <h2> Single Item</h2>
+    <Fragment>
       <Slider {...settings}>
         <div>
-          <h3>1</h3>
+          <img src={data} alt="/" />
         </div>
         <div>
-          <h3>2</h3>
+          <img src={data} alt="/" />
         </div>
         <div>
-          <h3>3</h3>
+          <img src={data} alt="/" />
         </div>
         <div>
-          <h3>4</h3>
+          <img src={data} alt="/" />
         </div>
         <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
+          <img src={data} alt="/" />
         </div>
       </Slider>
-    </div>
+    </Fragment>
   );
 };
-
+<video
+  width="100%"
+  controls="false"
+  preload="metadata"
+  poster="http://placehold.it/910x606"
+  muted
+>
+  <source
+    src="https://www.w3schools.com/html/mov_bbb.mp4#t=0.5"
+    type="video/mp4"
+  />
+</video>;
 export default Carousel;

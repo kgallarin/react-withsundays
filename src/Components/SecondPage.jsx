@@ -12,11 +12,24 @@ const styles = theme => ({
   },
   container: {
     maxWidth: "1100px",
-    margin: "0 auto"
+    margin: "0 auto",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      margin: "0",
+      padding: "0 15px"
+    }
   },
   title: {
     margin: "20px 0",
-    color: theme.palette.primary.main
+    color: theme.palette.primary.main,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "70%"
+    }
+  },
+  subHeading: {
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "80%"
+    }
   }
 });
 
@@ -47,7 +60,7 @@ const SecondPage = props => {
                 <Typography variant="display2" className={classes.title}>
                   Background & Audience
                 </Typography>
-                <Typography variant="subheading">
+                <Typography variant="subheading" className={classes.subHeading}>
                   Tourism & Events Queensland wanted to increase consideration
                   of The Whitsundays amongst ‘social fun seekers’; digitally
                   savvy consumers that socialise substantially online.{" "}
@@ -57,7 +70,7 @@ const SecondPage = props => {
                 <Typography variant="display2" className={classes.title}>
                   Problem
                 </Typography>
-                <Typography variant="subheading">
+                <Typography variant="subheading" className={classes.subHeading}>
                   Tourism & Events Queensland wanted to increase consideration
                   of The Whitsundays amongst ‘social fun seekers’; digitally
                   savvy consumers that socialise substantially online.{" "}
@@ -67,7 +80,7 @@ const SecondPage = props => {
                 <Typography variant="display2" className={classes.title}>
                   Objective
                 </Typography>
-                <Typography variant="subheading">
+                <Typography variant="subheading" className={classes.subHeading}>
                   Tourism & Events Queensland wanted to increase consideration
                   of The Whitsundays amongst ‘social fun seekers’; digitally
                   savvy consumers that socialise substantially online.{" "}

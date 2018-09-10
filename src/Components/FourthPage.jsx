@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
 import Tabs from "./Tabs";
 
 const styles = theme => ({
@@ -11,7 +10,12 @@ const styles = theme => ({
   },
   container: {
     maxWidth: "1100px",
-    margin: "0 auto"
+    margin: "0 auto",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      margin: "0",
+      padding: "0 15px"
+    }
   }
 });
 const FourthPage = props => {

@@ -11,9 +11,11 @@ import FourthPage from "./FourthPage";
 
 const fullPageOptions = {
   anchors: ["video", "challenge", "solutions", "slideshow"],
-  scrollOverflow: true,
+  scrollOverflow: false,
   navigation: true,
-  licenseKey: "null"
+  licenseKey: "null",
+  autoScrolling: false,
+  fitToSection: false
 };
 
 const FullPageWrapper = props => {

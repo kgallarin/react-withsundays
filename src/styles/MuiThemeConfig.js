@@ -8,18 +8,18 @@ export default {
     },
     secondary: {
       main: "rgba(fff,fff,fff,0.0)",
-      dark: "#fff",
-      contrastText: "#fff"
+      dark: "#282828",
+      contrastText: "#282828"
     },
     error: {
       main: "#fff",
-      contrastText: "#fff"
+      contrastText: "tomato"
     },
     divider: "#D7D6D5",
     background: {
-      paper: "transparent",
+      paper: "#333333",
       header: "#333333",
-      default: "#fff"
+      default: "#333333"
     }
   }
 };

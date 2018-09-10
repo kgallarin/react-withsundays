@@ -10,14 +10,30 @@ const styles = theme => ({
   },
   container: {
     maxWidth: "1100px",
-    margin: "0 auto"
+    margin: "0 auto",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      margin: "0",
+      padding: "0 15px"
+    }
   },
   display2: {
     color: theme.palette.primary.main,
-    marginBottom: "30px"
+    marginBottom: "30px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "70%"
+    }
   },
   display1: {
-    color: theme.palette.primary.main
+    color: theme.palette.primary.main,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "80%"
+    }
+  },
+  subHeading: {
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "80%"
+    }
   }
 });
 const ThirdPage = props => {
@@ -47,13 +63,21 @@ const ThirdPage = props => {
           <Grid container alignItems="flex-start" justify="flex-end">
             <Grid container direction="column">
               <Grid item>
-                <Typography variant="subheading" paragraph>
+                <Typography
+                  variant="subheading"
+                  className={classes.subHeading}
+                  paragraph
+                >
                   We knew movies rated high on the list of our target’s
                   interests and, with incredible beaches, seaplanes, yachts and
                   glamorous locations, the Whitsundays is the perfect setting
                   for a movie.
                 </Typography>
-                <Typography variant="subheading" paragraph>
+                <Typography
+                  variant="subheading"
+                  className={classes.subHeading}
+                  paragraph
+                >
                   So we invited Australians to write it:
                 </Typography>
                 <Typography
@@ -78,7 +102,11 @@ const ThirdPage = props => {
           <Grid container alignItems="flex-start" justify="flex-end">
             <Grid container direction="column">
               <Grid item>
-                <Typography variant="subheading" paragraph>
+                <Typography
+                  variant="subheading"
+                  className={classes.subHeading}
+                  paragraph
+                >
                   The campaign launched with a trailer, radio and online
                   advertising.
                 </Typography>

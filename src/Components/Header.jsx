@@ -9,6 +9,7 @@ import Hidden from "@material-ui/core/Hidden";
 import Typography from "@material-ui/core/Typography";
 import downloadIcon from "../img/download_icon.png";
 import playLogo from "../img/logo.png";
+import AnchorMenu from "./Menu";
 
 const styles = theme => ({
   root: {
@@ -52,7 +53,7 @@ const Header = props => {
         color="default"
       >
         <Toolbar>
-          <Hidden>
+          <Hidden mdDown>
             <Grid
               className={`${classes.nav} navElem`}
               alignItems="center"
@@ -105,6 +106,42 @@ const Header = props => {
                 >
                   <Typography>Slideshow</Typography>
                 </Button>
+              </Grid>
+              <Grid item className={classes.lastChildBtn}>
+                <Button className={`${classes.button} ${classes.downloadBtn}`}>
+                  <Typography>
+                    <img
+                      src={downloadIcon}
+                      className={classes.icon}
+                      alt="download"
+                    />
+                    Download Board
+                  </Typography>
+                </Button>
+              </Grid>
+            </Grid>
+          </Hidden>
+          <Hidden mdUp>
+            <Grid
+              className={`${classes.nav} navElem`}
+              alignItems="center"
+              container
+            >
+              <Grid item>
+                <Button
+                  disableRipple
+                  className={`${classes.nav} btnLogo`}
+                  onClick={() => {
+                    fullPage.moveTo(pageAnchors[0], 0);
+                  }}
+                >
+                  <Typography>
+                    <img src={playLogo} alt="play" />
+                  </Typography>
+                </Button>
+              </Grid>
+              <Grid item>
+                <AnchorMenu pages={fullPage} anchors={pageAnchors} />
               </Grid>
               <Grid item className={classes.lastChildBtn}>
                 <Button className={`${classes.button} ${classes.downloadBtn}`}>
