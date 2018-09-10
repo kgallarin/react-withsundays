@@ -21,18 +21,18 @@ const styles = theme => ({
     color: theme.palette.primary.main,
     marginBottom: "30px",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "70%"
+      fontSize: "95%"
     }
   },
   display1: {
     color: theme.palette.primary.main,
     [theme.breakpoints.down("sm")]: {
-      fontSize: "80%"
+      fontSize: "85%"
     }
   },
   subHeading: {
     [theme.breakpoints.down("sm")]: {
-      fontSize: "80%"
+      fontSize: "85%"
     }
   }
 });

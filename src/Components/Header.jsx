@@ -151,7 +151,7 @@ const Header = props => {
                       className={classes.icon}
                       alt="download"
                     />
-                    Download Board
+                    <Hidden xsDown>Download Board</Hidden>
                   </Typography>
                 </Button>
               </Grid>
