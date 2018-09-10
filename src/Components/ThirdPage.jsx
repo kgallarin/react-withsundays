@@ -19,10 +19,7 @@ const styles = theme => ({
   },
   display2: {
     color: theme.palette.primary.main,
-    marginBottom: "30px",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "95%"
-    }
+    marginBottom: "30px"
   },
   display1: {
     color: theme.palette.primary.main,

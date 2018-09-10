@@ -23,12 +23,7 @@ const styles = theme => ({
     margin: "20px 0",
     color: theme.palette.primary.main,
     [theme.breakpoints.down("sm")]: {
-      fontSize: "70%"
-    }
-  },
-  subHeading: {
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "80%"
+      fontSize: "30px"
     }
   }
 });
